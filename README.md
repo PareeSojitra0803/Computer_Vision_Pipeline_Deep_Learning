@@ -8,7 +8,7 @@
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 ![Project](https://img.shields.io/badge/Project-Computer%20Vision-red)
 
-------------------------------------------------------------------------
+---
 
 ## 📑 Table of Contents
 
@@ -28,7 +28,7 @@
 -   [📦 Requirements](#-requirements)
 -   [👨‍💻 Author](#-author)
 
-------------------------------------------------------------------------
+---
 
 # 📌 Project Overview
 
@@ -43,7 +43,7 @@ The project also compares detection thresholds, privacy blurring,
 preprocessing effects, and the real-time FPS of **YuNet, YOLOv8n, and
 the combined pipeline**.
 
-------------------------------------------------------------------------
+---
 
 # 🎯 Project Objectives
 
@@ -73,7 +73,7 @@ This project aims to:
 -   Benchmark YuNet, YOLOv8n, and the combined pipeline using 100 webcam
     frames.
 
-------------------------------------------------------------------------
+---
 
 # 📂 Data & Model Sources
 
@@ -114,40 +114,19 @@ https://github.com/ultralytics/ultralytics
 YOLOv8 documentation:\
 https://docs.ultralytics.com/models/yolov8/
 
-------------------------------------------------------------------------
+---
 
-# 🧠 Computer Vision Topics Covered
+## 🧠 Computer Vision Topics Covered
 
-  -----------------------------------------------------------------------
-  **Topic**                     **Description**
-  ----------------------------- -----------------------------------------
-  **1️⃣ Image Processing &       Performs grayscale conversion, binary
-  Morphology**                  thresholding, and the four morphological
-                                operations using different kernel shapes
-                                and sizes.
+| **Topic** | **Description** |
+|---|---|
+| **1️⃣ Image Processing & Morphology** | Performs grayscale conversion, binary thresholding, and the four morphological operations using different kernel shapes and sizes. |
+| **2️⃣ Bitwise Operations & Histograms** | Demonstrates mask-based AND/OR/XOR/NOT operations and analyses grayscale, colour, brightness, and contrast distributions. |
+| **3️⃣ Face Detection with YuNet** | Uses YuNet for static and real-time face detection with bounding boxes, five landmarks, confidence thresholds, and privacy blurring. |
+| **4️⃣ Object Detection with YOLOv8** | Detects multiple COCO objects in images and webcam frames, compares confidence/IoU thresholds, and demonstrates NMS duplicate suppression. |
+| **5️⃣ Integrated Pipeline & Comparison** | Combines YuNet and YOLOv8n in a real-time pipeline, tests morphological pre-cleaning, benchmarks FPS, and compares the overall approaches. |
 
-  **2️⃣ Bitwise Operations &     Demonstrates mask-based AND/OR/XOR/NOT
-  Histograms**                  operations and analyses grayscale,
-                                colour, brightness, and contrast
-                                distributions.
-
-  **3️⃣ Face Detection with      Uses YuNet for static and real-time face
-  YuNet**                       detection with bounding boxes, five
-                                landmarks, confidence thresholds, and
-                                privacy blurring.
-
-  **4️⃣ Object Detection with    Detects multiple COCO objects in images
-  YOLOv8**                      and webcam frames, compares
-                                confidence/IoU thresholds, and
-                                demonstrates NMS duplicate suppression.
-
-  **5️⃣ Integrated Pipeline &    Combines YuNet and YOLOv8n in a real-time
-  Comparison**                  pipeline, tests morphological
-                                pre-cleaning, benchmarks FPS, and
-                                compares the overall approaches.
-  -----------------------------------------------------------------------
-
-------------------------------------------------------------------------
+---
 
 # 📊 Key Visualizations
 
@@ -220,7 +199,7 @@ The table below summarizes the final comparison from the integrated pipeline.
 -   The results demonstrate the trade-off between detection capability
     and computational cost.
 
-------------------------------------------------------------------------
+---
 
 # 🏆 Key Findings
 
@@ -274,21 +253,21 @@ The final 100-frame benchmark showed:
 This demonstrates that combining multiple detectors increases
 computational cost and reduces real-time speed.
 
-------------------------------------------------------------------------
+---
 
-# 🛠️ Tools & Technologies
+## 🛠️ Tools & Technologies
 
-  **Category**                    **Technologies**
-  ------------------------------- ----------------------------
-  **Programming Language**        Python 3.13
-  **Computer Vision**             OpenCV 5.0.0
-  **Deep Learning / Detection**   YuNet, Ultralytics YOLOv8n
-  **Numerical Computing**         NumPy 2.3.3
-  **Data Visualization**          Matplotlib 3.10.7
-  **Development Environment**     Jupyter Notebook, VS Code
-  **Version Control**             Git & GitHub
+| **Category** | **Technologies** |
+|---|---|
+| **Programming Language** | Python 3.13 |
+| **Computer Vision** | OpenCV 5.0.0 |
+| **Deep Learning / Detection** | YuNet, Ultralytics YOLOv8n |
+| **Numerical Computing** | NumPy 2.3.3 |
+| **Data Visualization** | Matplotlib 3.10.7 |
+| **Development Environment** | Jupyter Notebook, VS Code |
+| **Version Control** | Git & GitHub |
 
-------------------------------------------------------------------------
+---
 
 # 🚀 Installation & Usage
 
@@ -327,7 +306,7 @@ Run the notebook cells sequentially from top to bottom.
 > **Note:** Webcam-based sections require access to a working camera.
 > Press **Q** to exit the real-time detection windows.
 
-------------------------------------------------------------------------
+---
 
 # 📁 Project Structure
 
@@ -372,7 +351,7 @@ Computer_Vision_Pipeline_Deep_Learning/
 ```
 
 
-------------------------------------------------------------------------
+---
 
 # 🎥 Project Demonstration Video
 
@@ -385,37 +364,21 @@ integrated pipeline, and FPS benchmarking, should be linked below.
 > **Video Link:**\
 > **\[ADD YOUR PROJECT VIDEO LINK HERE\]**
 
-------------------------------------------------------------------------
+---
 
-# 📂 Repository Navigation
+## 📂 Repository Navigation
 
-  ----------------------------------------------------------------------------
-  **File / Folder**                          **Description**
-  ------------------------------------------ ---------------------------------
-  📓 **[CV_PR3.ipynb](CV_PR3.ipynb)**        Complete Computer Vision
-                                             implementation covering all five
-                                             project tasks
+| **File / Folder** | **Description** |
+|---|---|
+| 📓 [CV_PR3.ipynb](CV_PR3.ipynb) | Complete Computer Vision implementation covering all five project tasks |
+| 🌐 [CV_PR3.html](CV_PR3.html) | HTML export of the completed Jupyter Notebook |
+| 🖼️ [data/images/](data/images/) | Test images used for classical image processing, face detection, and object detection |
+| 🤖 [data/models/](data/models/) | YuNet face detection model |
+| 📊 [plots/](plots/) | Generated visualizations from the major experiments |
+| 📦 [requirements.txt](requirements.txt) | Project dependencies |
+| 📖 [README.md](README.md) | Project documentation and usage guide |
 
-  🌐 **[CV_PR3.html](CV_PR3.html)**          HTML export of the completed
-                                             Jupyter Notebook
-
-  🖼️ **[data/images/](data/images/)**        Test images used for classical
-                                             image processing, face detection,
-                                             and object detection
-
-  🤖 **[data/models/](data/models/)**        YuNet face detection model
-
-  📊 **[plots/](plots/)**                    Generated visualizations from all
-                                             major experiments
-
-  📦                                         Project dependencies
-  **[requirements.txt](requirements.txt)**   
-
-  📖 **[README.md](README.md)**              Project documentation and usage
-                                             guide
-  ----------------------------------------------------------------------------
-
-------------------------------------------------------------------------
+---
 
 # 📦 Requirements
 
@@ -438,7 +401,7 @@ matplotlib: 3.10.7
 > implementation uses the standard `opencv-python` package and
 > `cv2.FaceDetectorYN`.
 
-------------------------------------------------------------------------
+---
 
 # 👨‍💻 Author
 
