@@ -195,39 +195,18 @@ Only the main project visuals are shown here. The repository `plots/` folder con
 
 ---
 
-# 📈 Results Comparison
+## 📈 Results Comparison
 
-The table below summarizes the final comparison from the integrated
-pipeline.
+The table below summarizes the final comparison from the integrated pipeline.
 
-  ----------------------------------------------------------------------------------------
-  **Technique**   **Type**    **What It      **Lighting          **Approx. **Best Use
-                              Detects**      Robustness**            FPS** Case**
-  --------------- ----------- -------------- -------------- -------------- ---------------
-  Morphological   Classical   Noise, shapes, Low--Medium               N/A Image
-  Operations                  small gaps                                   preprocessing
-                                                                           and denoising
-
-  Bitwise         Classical   Masked regions Low                       N/A Masking and
-  Operations                  / ROIs                                       region
-                                                                           extraction
-
-  Histograms      Classical   Pixel          Medium                    N/A Brightness,
-                              intensity and                                contrast and
-                              colour                                       image analysis
-                              distribution                                 
-
-  YuNet Face      Deep        Human faces    High                **12.48** Real-time face
-  Detection       Learning                                                 detection
-
-  YOLOv8n Object  Deep        80 COCO object High                 **4.11** Multi-class
-  Detection       Learning    classes                                      object
-                                                                           detection
-
-  Combined        Deep        Faces +        High                 **3.18** Integrated
-  YuNet + YOLO    Learning    objects                                      real-time CV
-                                                                           pipeline
-  ----------------------------------------------------------------------------------------
+| **Technique** | **Type** | **What It Detects** | **Lighting Robustness** | **Approx. FPS** | **Best Use Case** |
+|---|---|---|---|---:|---|
+| Morphological Operations | Classical | Noise, shapes, small gaps | Low–Medium | N/A | Image preprocessing and denoising |
+| Bitwise Operations | Classical | Masked regions / ROIs | Low | N/A | Masking and region extraction |
+| Histograms | Classical | Pixel intensity and colour distribution | Medium | N/A | Brightness, contrast and image analysis |
+| YuNet Face Detection | Deep Learning | Human faces | High | **12.48** | Real-time face detection |
+| YOLOv8n Object Detection | Deep Learning | 80 COCO object classes | High | **4.11** | Multi-class object detection |
+| Combined YuNet + YOLO | Deep Learning | Faces + objects | High | **3.18** | Integrated real-time CV pipeline |
 
 ### Interpretation
 
