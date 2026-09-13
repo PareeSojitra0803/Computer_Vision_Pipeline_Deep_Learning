@@ -362,7 +362,7 @@ integrated pipeline, and FPS benchmarking, should be linked below.
 ### 🎬 Project Explanation Video
 
 > **Video Link:**\
-> **\[ADD YOUR PROJECT VIDEO LINK HERE\]**
+> **https://drive.google.com/file/d/1l5ktEseGMBJ1wBX6amzPoscJ1uQQww23/view?usp=sharing**
 
 ---
 
