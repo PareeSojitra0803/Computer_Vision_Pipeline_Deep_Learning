@@ -24,6 +24,7 @@
 -   [🚀 Installation & Usage](#-installation--usage)
 -   [📁 Project Structure](#-project-structure)
 -   [🎥 Project Demonstration Video](#-project-demonstration-video)
+-   [🎙️ Audio Event Detection Demo](#️-audio-event-detection-demo)
 -   [📂 Repository Navigation](#-repository-navigation)
 -   [📦 Requirements](#-requirements)
 -   [👨‍💻 Author](#-author)
@@ -42,6 +43,8 @@ detection**, followed by an integrated real-time webcam pipeline.
 The project also compares detection thresholds, privacy blurring,
 preprocessing effects, and the real-time FPS of **YuNet, YOLOv8n, and
 the combined pipeline**.
+
+The repository also includes a **Home Safety Sound Detector** trained with Teachable Machine, with classes for Alarm, Background Noise, Door Knock, Glass Break, and Siren. The original browser demo is available as `Audio_PR.html`; the public Streamlit deployment is linked below.
 
 ---
 
@@ -324,7 +327,11 @@ Computer_Vision_Pipeline_Deep_Learning/
 │   │   └── people4.jpg
 │   │
 │   └── models/
-│       └── face_detection_yunet_2023mar.onnx
+│       ├── face_detection_yunet_2023mar.onnx
+│       └── home_safety_audio/
+│           ├── model.json
+│           ├── metadata.json
+│           └── weights.bin
 │
 ├── plots/
 │   ├── binary_threshold.png
@@ -346,6 +353,7 @@ Computer_Vision_Pipeline_Deep_Learning/
 │
 ├── CV_PR3.ipynb
 ├── CV_PR3.html
+├── Audio_PR.html
 ├── requirements.txt
 └── README.md
 ```
@@ -366,12 +374,35 @@ integrated pipeline, and FPS benchmarking, should be linked below.
 
 ---
 
+## 🎙️ Audio Event Detection Demo
+
+The **Home Safety Sound Detector** classifies live microphone audio into five classes:
+
+- Alarm
+- Background Noise
+- Door Knock
+- Glass Break
+- Siren
+
+- **🌐 Live Streamlit Web App:** https://computer-vision-pipeline.streamlit.app/
+- **🧪 Local HTML demo:** [Audio_PR.html](Audio_PR.html)
+- **🤖 Teachable Machine model files:** `data/models/home_safety_audio/`
+
+To use the live demo, open the web app in a browser, click **Start listening**, and allow microphone access. The browser needs internet access to load the model libraries. Prediction quality depends on the microphone, environment, and training examples.
+
+The Streamlit app is maintained in a separate deployment repository:
+[Computer_Vision_Pipeline_WebApp](https://github.com/PareeSojitra0803/Computer_Vision_Pipeline_WebApp).
+
+---
+
 ## 📂 Repository Navigation
 
 | **File / Folder** | **Description** |
 |---|---|
 | 📓 [CV_PR3.ipynb](CV_PR3.ipynb) | Complete Computer Vision implementation covering all five project tasks |
 | 🌐 [CV_PR3.html](CV_PR3.html) | HTML export of the completed Jupyter Notebook |
+| 🎙️ [Audio_PR.html](Audio_PR.html) | Standalone browser demo for the Home Safety Sound Detector |
+| 🔊 [data/models/home_safety_audio/](data/models/home_safety_audio/) | Teachable Machine audio model files |
 | 🖼️ [data/images/](data/images/) | Test images used for classical image processing, face detection, and object detection |
 | 🤖 [data/models/](data/models/) | YuNet face detection model |
 | 📊 [plots/](plots/) | Generated visualizations from the major experiments |
